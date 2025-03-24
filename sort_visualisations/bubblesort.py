@@ -24,6 +24,7 @@ class SortingVisualizer:
             n = len(self.arr)
             if self.i < n - 1:
                 if self.j < n - self.i - 1:
+                    #Compare and change positions where necessary
                     if self.arr[self.j] > self.arr[self.j + 1]:
                         self.arr[self.j], self.arr[self.j + 1] = self.arr[self.j + 1], self.arr[self.j]
                     self.j += 1
